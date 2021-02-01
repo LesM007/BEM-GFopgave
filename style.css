@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap'); /*GOOGLE FONTS*/
+* { /*SKAL VÆRE DER ALTID*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+  -moz-scrollbars: vertical;
+}
+body {
+  background-color: #6B6B6B;
+  font-family: 'Roboto', sans-serif;
+}
+#wrapper {
+  background-color: #1F1F1F;
+  max-width: 960px;
+  margin: 0 auto; /*CENTRER WRAPPER*/
+}
+img { /*SKAL VÆRE DER ALTID*/
+  width: 100%;
+  height: auto;
+}
+a, nav i {
+  text-decoration: none;
+  color: #414141;
+  font-weight: 500;
+}
+header {
+  max-width: 100%;
+}
+header span {
+  padding-left: 4.6em;
+}
+header h1 {
+  padding-left: 1em;
+}
+header nav ul {
+  background-color: #0099CC;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: .8em 4em;
+}
+.lightbox{
+    display: grid;
+}
+
+.lightbox__photo, .lightbox__l-arrow, .lightbox__r-arrow, .lightbox__caption {
+    grid-area: 1 / 1 / 1 / 2;
+}
+.lightbox__caption {
+    padding: 1%;
+    display: grid;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .70);
+    align-self: end;
+}
+.lightbox__l-arrow {
+    justify-self: start;
+    padding-left: 0.7em;
+    z-index: 100;
+    align-self: center;
+    display: grid;
+}
+.lightbox__r-arrow {
+    display: grid;
+    padding-right: 0.7em;
+    justify-self: end;
+    align-self: center;
+    z-index: 100;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+}
+main div:first-child {
+  flex: 3;
+}
+main div:last-child {
+  flex: 1.4;
+}
+article {
+  display: flex;
+  padding-bottom: 4em;
+}
+article section {
+  flex-direction: row;
+  margin: -.5% 3%;
+}
+.extra {
+  display: none;
+}
+.knap, .button {
+  background-color: #2EABEE;
+  color: #414141;
+  width: 25%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  padding: 0.2%;
+}
+.anmeld article p:first-child {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 1%;
+}
+.anmeld article {
+  padding-bottom: 1.2em;
+}
+footer {
+  padding: 4em;
+}
+h1 {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 70px;
+}
+span, .ctc__message {
+  color: #0099CC;
+}
+h2 {
+  color: #FD1103;
+  font-size: 20px;
+  font-weight: 500;
+}
+h3 {
+  color: #2EABEE;
+  font-size: 16px;
+}
+h4 {
+  color: #FFFFFF;
+  font-size: 13px;
+  padding: .4em 0 1.5em;
+}
+h5 {
+  color: #FFFFFF;
+}
+p {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+i {
+  color: #2EABEE;
+}
+.cursiv {
+  font-style: italic;
+}
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
